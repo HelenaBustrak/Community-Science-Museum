@@ -1,0 +1,248 @@
+/*-------------------------------------------------------- Global Styles --------------------------------------------------*/
+html {
+    box-sizing: border-box;
+
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+:root {
+    --neon-green: #27fa14;
+    --dark-blue: #002D52;
+    --purple: #9112ff;
+    --dark-purple: #4528eb;
+}
+
+body {
+    max-width: 100%;
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+    color: white;
+    text-shadow: 3px 2px 6px rgb(0,0,0,0.6);
+    font-family: 'Rubik', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+h2 {
+    margin-top: 50px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.green {
+    color: var(--neon-green);
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.white {
+
+}
+
+/*-------------------------------------------------------- Header Styles --------------------------------------------------*/
+
+
+header {
+    background-image: url('../images/Space\ blue.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 12%;
+    margin: 0;
+}
+
+.logo {
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+nav {
+    display: none;
+    background-color: white;
+    padding: 15px 0 25px 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-top: 15px;
+}
+
+li a {
+    text-decoration: none;
+    color: var(--neon-green);
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.searchbar {
+    border: none;
+    width: 160px;
+    font-family: ;
+}
+
+.searchbar_submit {
+    width: 200px;
+    padding: 7px;
+    border: 2px solid var(--neon-green);
+    border-radius: 13px;
+}
+
+.fa-search {
+    color: var(--neon-green);
+}
+
+.active {
+    color: var(--purple);
+}
+
+.label-hamburger {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    height: 50px;
+    background-color: var(--neon-green);
+    
+}
+
+.fa-bars {
+    margin-top: 10px;
+    color: var(--dark-blue);
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+    display: block;
+}
+
+
+.second_section, .first_paragraph, .mobile_homepage_image h1, .cta, ul li, .for_kids, .for_teachers, .for_researchers {
+    margin-left: 7%;
+    margin-right: 7%;
+}
+/*-------------------------------------------------------- Main Styles --------------------------------------------------*/
+
+main, ul li, footer {
+    font-family: 'Rubik', sans-serif;
+}
+
+main {
+    color: var(--dark-blue);
+}
+
+.mobile_homepage_image {
+    background-image: url('../images/Frontpage\ image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+    padding-top: 250px;
+}
+
+
+
+.second_section_img, .third_section_img {
+    width: 100%;
+    border-radius: 13px;
+}
+
+.button {
+    display: block;
+    width: 135px;
+    padding: 7px 10px;
+    text-decoration: none;
+    border-radius: 20px;
+    background-color: var(--purple);
+    color: white;
+    font-size: 18px;
+}
+
+.exhibitions {
+    width: 180px;
+    margin-top: 10px;
+    background-color: var(--neon-green);
+}
+
+.cta:hover {
+    background-color: white;
+    border: 2px solid var(--purple);
+    color: var(--purple);
+}
+
+.exhibitions:hover {
+    background-color: white;
+    border: 2px solid var(--neon-green);
+    color: var(--neon-green);
+}
+
+.text_button {
+    display: inline;
+    margin-right: 18px;
+    text-transform: uppercase;
+}
+
+
+/*-------------------------------------------------------- Third section --------------------------------------------------*/
+
+.third_section {
+    background-image: url('../images/Space\ blue.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    padding: 10px 0 30px 0;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 22px;
+}
+.third_section h3 {
+    color: var(--neon-green);
+}
+
+.third_section p {
+    color: white;
+    text-shadow: 1px 1px 1px rgb(0,0,0,0.6);
+}
+
+/*-------------------------------------------------------- Footer --------------------------------------------------*/
+
+footer {
+    background-color: var(--dark-blue);
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+.phone, .adress, .mail {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_info i {
+    margin-top: 20px;
+    display: inline;
+}
+
+.footer_info h5 {
+    margin-top: 8px;
+}
+
+.fab {
+    font-size: 25px;
+    margin: 10px;
+    color: var(--neon-green);
+}
+
