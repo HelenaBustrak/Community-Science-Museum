@@ -21,27 +21,24 @@ body {
 
 h1 {
     margin: 0;
-    color: white;
+    color: var(--neon-green);
     text-shadow: 3px 2px 6px rgb(0,0,0,0.6);
     font-family: 'Rubik', sans-serif;
-    font-size: 50px;
-    font-weight: 700;
-}
-
-h2 {
-    margin-top: 50px;
-    font-size: 25px;
-    font-weight: 500;
-}
-
-.green {
-    color: var(--neon-green);
     font-size: 40px;
     font-weight: 500;
 }
 
-.white {
+h2 {
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: 500;
+}
 
+span {
+    display: block;
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
 }
 
 /*-------------------------------------------------------- Header Styles --------------------------------------------------*/
@@ -80,26 +77,25 @@ li {
 
 li a {
     text-decoration: none;
-    color: var(--neon-green);
+    color: var(--purple);
     font-weight: 900;
     font-size: 30px;
 }
 
 .searchbar {
     border: none;
-    width: 160px;
-    font-family: ;
+    width: 120px;
 }
 
 .searchbar_submit {
-    width: 200px;
-    padding: 7px;
-    border: 2px solid var(--neon-green);
+    width: 150px;
+    padding: 5px;
+    border: 1px solid var(--purple);
     border-radius: 13px;
 }
 
 .fa-search {
-    color: var(--neon-green);
+    color: var(--purple);
 }
 
 .active {
@@ -129,7 +125,7 @@ li a {
 }
 
 
-.second_section, .first_paragraph, .mobile_homepage_image h1, .cta, ul li, .for_kids, .for_teachers, .for_researchers {
+.second_section, .first_paragraph, .homepage_image h1, .cta, ul li, .for_kids, .for_teachers, .for_researchers {
     margin-left: 7%;
     margin-right: 7%;
 }
@@ -143,15 +139,22 @@ main {
     color: var(--dark-blue);
 }
 
-.mobile_homepage_image {
+.homepage_image {
     background-image: url('../images/Frontpage\ image.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 350px;
+    height: auto;
     padding-top: 250px;
+    padding-bottom: 30px;
 }
 
-
+.first_paragraph {
+    font-size: 1.3em;
+    max-width: 580px;
+    color: var(--dark-blue);
+    text-shadow: 3px 2px 6px rgb(0,0,0,0.3);
+    background-color: white;
+}
 
 .second_section_img, .third_section_img {
     width: 100%;
@@ -172,7 +175,7 @@ main {
 .exhibitions {
     width: 180px;
     margin-top: 10px;
-    background-color: var(--neon-green);
+    background-color: var(--dark-blue);
 }
 
 .cta:hover {
@@ -183,8 +186,8 @@ main {
 
 .exhibitions:hover {
     background-color: white;
-    border: 2px solid var(--neon-green);
-    color: var(--neon-green);
+    border: 2px solid var(--dark-blue);
+    color: var(--dark-blue);
 }
 
 .text_button {
@@ -212,9 +215,13 @@ h3 {
     color: var(--neon-green);
 }
 
+.p_container {
+    background-color: rgb(0,45,82,0.6)
+}
+
 .third_section p {
     color: white;
-    text-shadow: 1px 1px 1px rgb(0,0,0,0.6);
+    text-shadow: 1px 1px 1px rgb(0,0,0,0.4);
 }
 
 /*-------------------------------------------------------- Footer --------------------------------------------------*/
@@ -244,5 +251,158 @@ footer {
     font-size: 25px;
     margin: 10px;
     color: var(--neon-green);
+}
+
+/*-------------------------------------------------------- Laptop Styles --------------------------------------------------*/
+
+@media (min-width: 1020px) {
+    header {
+        height: 150px;
+        overflow: hidden;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        float: right;
+        padding: 0;
+        background-color: unset;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row; 
+        justify-content: right;
+        margin-right: 20px;
+        margin-top: 10px;
+    }
+
+    ul li {
+        margin: 0;
+    }
+
+    li a {
+        float: inline-end;
+        font-size: 18px;
+        margin: 0;
+        text-transform: uppercase;
+        color: var(--neon-green);
+        margin-right: 23px;
+
+    }
+
+    li a:hover {
+        color: white;
+    }
+
+    .active {
+        color: white;
+        border-bottom: 2px solid var(--neon-green);
+    }
+
+    .searchbar {
+        border: none;
+        outline: none;
+        background-color: unset;
+        color: var(--neon-green);
+    }
+
+    .searchbar_submit {
+        width: 150px;
+        border: 1px solid var(--neon-green);
+    }
+
+    .fa-search {
+        color: var(--neon-green);
+    }
+
+    .searchbar:active {
+        border: none;
+    }
+
+    .label-hamburger {
+        display: none;
+    }
+
+    .logo {
+        float: left;
+        height: 150px;
+        margin-left: 10%;
+    }
+
+
+    .second_section, .first_paragraph, .homepage_image h1, .cta, .for_kids, .for_teachers, .for_researchers {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    span {
+        font-size: 60px;
+    }
+
+    .homepage_image {
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 380px;
+        height: 670px;
+    }
+
+    .first_paragraph {
+        padding: 5px;
+        text-shadow: 3px 2px 6px rgb(0,0,0,0.3);
+        background-color: white;
+    }
+
+    .button {
+        width: 160px;
+    }
+
+    .text_button {
+        margin-right: 40px;
+    }
+
+    .second_section {
+        display: flex;
+        flex-direction: row;
+        margin-top: 70px;
+    }
+
+    .second_section h2 {
+        margin-top: 0;
+    }
+
+    .wonders {
+        padding-right: 50px;
+        border-right: 2px solid var(--purple);
+    }
+
+    .thousand_exhibitions {
+        padding-left: 50px;
+    }
+
+    .wonders p, .thousand_exhibitions p {
+        margin-bottom: 0;
+        font-size: 1.1em;
+    }
+
+    .second_section_img {
+        margin: 30px 0;
+    }
+
+    .exhibitions {
+        margin: 30px auto 70px auto;
+        text-align: center;
+        width: 400px;
+    }
+
+    .p_container {
+        display: flex;
+        flex-direction: row;
+        height: 500px;
+    }
 }
 
