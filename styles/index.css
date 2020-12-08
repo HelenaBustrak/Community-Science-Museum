@@ -149,7 +149,7 @@ main {
 }
 
 .first_paragraph {
-    font-size: 1.3em;
+    font-size: 1.1em;
     max-width: 580px;
     color: var(--dark-blue);
     text-shadow: 3px 2px 6px rgb(0,0,0,0.3);
@@ -175,6 +175,7 @@ main {
 .exhibitions {
     width: 180px;
     margin-top: 10px;
+    margin-left: 50px;
     background-color: var(--dark-blue);
 }
 
@@ -399,10 +400,6 @@ footer {
         width: 400px;
     }
 
-    .p_container {
-        display: flex;
-        flex-direction: row;
-        height: 500px;
-    }
+    
 }
 
