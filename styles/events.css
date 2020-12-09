@@ -1,0 +1,85 @@
+.events_header {
+    background-image: url('../images/special-events.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    padding-top: 150px;
+    
+}
+
+section, h1 {
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+h5 {
+    margin-top: 4px;
+}
+
+.one hr {
+    border: 1px solid var(--purple);
+}
+
+.two hr {
+    border: 1px solid #E67E00;
+}
+
+.three hr {
+    border: 1px solid #406D23;
+}
+
+hr {
+    margin: 0;
+}
+
+.events_img {
+    width: 100%;
+    min-height: 180px;
+    border-radius: 13px;
+    margin-top: 20px;
+    
+}
+
+.button_events {
+    width: 190px;
+    font-size: 18px;
+    padding: 7px 10px;
+    border-radius: 20px;
+}
+
+h3 {
+    display: inline;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.purple {
+    border: 1px solid var(--purple);
+}
+
+.purple h3, .purple i {
+    color: var(--purple);
+}
+
+.orange {
+    border: 1px solid #E67E00;
+}
+
+.orange h3, .orange i {
+    color: #E67E00;
+}
+
+.green {
+    border: 1px solid #406D23;
+}
+
+.green h3, .green i {
+    color: #406D23;
+}

@@ -1,0 +1,63 @@
+h1, section {
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.involved_header {
+    background-image: url('../images/get-involved.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    padding-top: 145px;
+}
+
+
+h1 {
+    color: white;
+}
+
+.involved-heading {
+    color: var(--neon-green);
+}
+h3 {
+    display: inline;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+h5 {
+    font-size: 15px;
+}
+
+.button_involved {
+    background-color: var(--purple);
+    width: 190px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    padding: 7px 10px;
+    border-radius: 20px;
+    color: white;
+}
+
+.item {
+    width: 220px;
+}
+
+.button_involved:hover {
+    background-color: white;
+    border: 1px solid var(--purple);
+    color: var(--purple);
+}
+
+.fa-phone-alt, .fa-envelope {
+    margin-right: 10px;
+    color: var(--purple);
+}
+hr {
+    margin:0;
+    border:1px solid var(--purple);
+}
+
+h2 {
+    margin-bottom: 4px;
+}

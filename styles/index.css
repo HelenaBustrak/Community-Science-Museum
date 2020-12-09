@@ -1,4 +1,4 @@
-/*-------------------------------------------------------- Global Styles --------------------------------------------------*/
+/*-------------------------------------------------------- Global Styles Mobile --------------------------------------------------*/
 html {
     box-sizing: border-box;
 
@@ -19,22 +19,7 @@ body {
     margin: 0;
 }
 
-h1 {
-    margin: 0;
-    color: var(--neon-green);
-    text-shadow: 3px 2px 6px rgb(0,0,0,0.6);
-    font-family: 'Rubik', sans-serif;
-    font-size: 40px;
-    font-weight: 500;
-}
-
-h2 {
-    margin-top: 50px;
-    font-size: 30px;
-    font-weight: 500;
-}
-
-span {
+.under-heading {
     display: block;
     color: white;
     font-size: 50px;
@@ -82,6 +67,7 @@ li a {
     font-size: 30px;
 }
 
+
 .searchbar {
     border: none;
     width: 120px;
@@ -89,7 +75,7 @@ li a {
 
 .searchbar_submit {
     width: 150px;
-    padding: 5px;
+    padding: 3px 5px;
     border: 1px solid var(--purple);
     border-radius: 13px;
 }
@@ -99,7 +85,7 @@ li a {
 }
 
 .active {
-    color: var(--purple);
+    border-bottom: 2px solid var(--dark-blue);
 }
 
 .label-hamburger {
@@ -125,7 +111,7 @@ li a {
 }
 
 
-.second_section, .first_paragraph, .homepage_image h1, .cta, ul li, .for_kids, .for_teachers, .for_researchers {
+.second_section, .first_paragraph, .homepage_image h1, .cta, .exhibitions, ul li, .for_kids, .for_teachers, .for_researchers, h3, hr {
     margin-left: 7%;
     margin-right: 7%;
 }
@@ -139,17 +125,41 @@ main {
     color: var(--dark-blue);
 }
 
+h1 {
+    margin: 0;
+    color: var(--neon-green);
+    text-shadow: 3px 2px 6px rgb(0,0,0,0.6);
+    font-family: 'Rubik', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+h2 {
+    margin-top: 50px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 35px;
+    font-weight: 500;
+}
+
+p {
+    font-size: 18px;
+}
+
 .homepage_image {
     background-image: url('../images/Frontpage\ image.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: auto;
+    height: 350px;
     padding-top: 250px;
-    padding-bottom: 30px;
+    margin-bottom: 200px;
+    
 }
 
 .first_paragraph {
-    font-size: 1.1em;
     max-width: 580px;
     color: var(--dark-blue);
     text-shadow: 3px 2px 6px rgb(0,0,0,0.3);
@@ -175,7 +185,6 @@ main {
 .exhibitions {
     width: 180px;
     margin-top: 10px;
-    margin-left: 50px;
     background-color: var(--dark-blue);
 }
 
@@ -207,22 +216,19 @@ main {
     margin-top: 30px;
     padding: 10px 0 30px 0;
 }
-
-h3 {
-    font-weight: 500;
-    font-size: 22px;
-}
 .third_section h3 {
     color: var(--neon-green);
-}
-
-.p_container {
-    background-color: rgb(0,45,82,0.6)
 }
 
 .third_section p {
     color: white;
     text-shadow: 1px 1px 1px rgb(0,0,0,0.4);
+    background-color: rgb(0,45,82,0.6)
+}
+
+hr {
+    margin-top: 40px;
+    border: solid 1px var(--neon-green);
 }
 
 /*-------------------------------------------------------- Footer --------------------------------------------------*/
@@ -252,6 +258,15 @@ footer {
     font-size: 25px;
     margin: 10px;
     color: var(--neon-green);
+}
+
+
+
+@media (min-width: 600px) {
+    .homepage_image {
+        height: 550px;
+        padding-top: 450px;
+    }
 }
 
 /*-------------------------------------------------------- Laptop Styles --------------------------------------------------*/
@@ -332,7 +347,7 @@ footer {
     }
 
 
-    .second_section, .first_paragraph, .homepage_image h1, .cta, .for_kids, .for_teachers, .for_researchers {
+    .second_section, .first_paragraph, .homepage_image h1, .cta, .for_kids, .for_teachers, .for_researchers, h3, hr {
         margin-left: 10%;
         margin-right: 10%;
     }
@@ -341,13 +356,14 @@ footer {
         font-size: 50px;
     }
 
-    span {
+    .under-heading {
         font-size: 60px;
     }
 
     .homepage_image {
         background-size: cover;
         background-repeat: no-repeat;
+        margin-bottom: 70px;
         padding-top: 380px;
         height: 670px;
     }
@@ -400,6 +416,61 @@ footer {
         width: 400px;
     }
 
-    
+    .for_kids {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .for_teachers {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .for_researchers{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .teachers_p {
+        order: 2;
+        margin-left: 20px;
+    }
+
+    .teachers {
+        order: 1;
+    }
+
+    .p_container {
+        margin-right: 20px;
+    }
+
+    .p_container p {
+        margin-top: 0;
+    }
+
+
+    .third_section_img {
+        width: 50%;
+        height: 320px;
+
+    }
+
+    .footer_info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 30px 0;
+    }
+
+
+
+
+
 }
 
+@media (min-width: 1400px) {
+    .homepage_image {
+        height: 1200px;
+        
+    }
+}

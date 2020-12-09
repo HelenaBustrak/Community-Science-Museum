@@ -1,0 +1,43 @@
+.visit_header {
+    background-image: url('../images/visit-us.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    padding-top: 200px;
+}
+
+hr {
+    margin:0;
+    border:1px solid var(--purple);
+}
+
+iframe {
+    width: 100%;
+    height: 450px;
+    margin-top: 22px;
+    border: none;
+}
+
+h1, section {
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+
+h2 {
+    margin-bottom: 4px;
+}
+
+h5 {
+    font-size: 15px;
+}
+
+.fa-phone-alt, .fa-envelope {
+    margin-right: 10px;
+    color: var(--purple);
+}
+
+.days {
+    color: var(--purple);
+    font-weight: 500;
+}
