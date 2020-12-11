@@ -18,6 +18,7 @@ span {
 .exhibition_img {
     height: 100%;   
     width: 100%;
+    margin-top: 18px;
     border-radius: 13px;
 }
 
@@ -39,7 +40,7 @@ h3 {
 
 .button_exhibitions {
     border: 1px solid var(--purple);
-    width: 190px;
+    width: 200px;
     font-size: 18px;
     padding: 7px 10px;
     border-radius: 20px;
@@ -51,4 +52,37 @@ h3 {
 
 .fa-arrow-circle-right {
     color: var(--purple);
+}
+
+
+/*-------------------------------------------------------- Laptop Styles --------------------------------------------------*/
+
+@media (min-width: 1020px) {
+    .exhibition_header {
+        height: 400px;
+        padding-top: 270px; 
+    }
+
+    .exhibitions_info {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .exhibition_img {
+        width: 50%;
+        height: 50%;
+        order: 2;
+    }
+
+    .exp_container {
+        height: max-content;
+        margin-right: 40px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .exhibition_header {
+        height: 600px;
+        padding-top: 400px; 
+    }
 }
