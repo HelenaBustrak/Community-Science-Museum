@@ -105,7 +105,7 @@ li a {
 }
 
 
-.second_section, .first_paragraph, .homepage_image h1, .cta, .exhibitions, .for_kids, .for_teachers, .for_researchers, h3, hr {
+.second_section, ul li, .first_paragraph, .homepage_image h1, .cta, .exhibitions, .for_kids, .for_teachers, .for_researchers, h3, hr {
     margin-left: 7%;
     margin-right: 7%;
 }
@@ -122,7 +122,7 @@ main {
 h1 {
     margin: 0;
     color: var(--neon-green);
-    text-shadow: 3px 2px 6px rgb(0,0,0,0.6);
+    text-shadow: 3px 2px 4px rgb(0,0,0);
     font-family: 'Rubik', sans-serif;
     font-size: 40px;
     font-weight: 500;
@@ -356,13 +356,13 @@ footer {
     .logo {
         float: left;
         height: 150px;
-        margin-left: 10%;
+        margin-left: 5%;
     }
 
 
     .second_section, .first_paragraph, .homepage_image h1, .cta, .for_kids, .for_teachers, .for_researchers, h3, hr {
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 13%;
+        margin-right: 13%;
     }
 
     h1 {
@@ -448,14 +448,20 @@ footer {
 
 
     .third_section_img {
-        width: 40%;
+        width: 50%;
     }
 
     .footer_info {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         padding: 30px 0;
+    }
+
+    .footer_socialm {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
     }
 
 

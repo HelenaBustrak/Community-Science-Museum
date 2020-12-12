@@ -1,8 +1,8 @@
 .events_header {
     background-image: url('../images/special-events.jpg');
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    height: 250px;
     padding-top: 150px;
     
 }
@@ -43,8 +43,12 @@ hr {
     width: 100%;
     min-height: 180px;
     border-radius: 13px;
-    margin-top: 20px;
+    margin-top: 70px;
     
+}
+
+.desktop {
+    display: none;
 }
 
 .button_events {
@@ -82,4 +86,54 @@ h3 {
 
 .green h3, .green i {
     color: #406D23;
+}
+
+/*-------------------------------------------------------- Laptop Styles --------------------------------------------------*/
+
+@media (min-width: 1020px) {
+    
+    h1, section {
+        margin-left: 13%;
+        margin-right: 13%;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    p {
+        max-width: 80%;
+    }
+
+    .events_header {
+        height: 400px;
+        padding-top: 270px; 
+    }
+
+    .events_img {
+        margin-top: 70px;
+    }
+
+    .one img {
+        margin-top: 40px;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    .button_events {
+        width: 220px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .events_header {
+        height: 600px;
+        padding-top: 400px; 
+    }
 }

@@ -61,3 +61,43 @@ hr {
 h2 {
     margin-bottom: 4px;
 }
+
+/*-------------------------------------------------------- Laptop Styles --------------------------------------------------*/
+
+@media (min-width: 1020px) {
+
+    h1, section {
+        margin-left: 13%;
+        margin-right: 13%;
+    }
+
+    .involved_header {
+        height: 400px;
+        padding-top: 270px;
+    }
+
+    .button_involved {
+        width: 220px;
+    }
+
+    .item {
+        width: 250px;
+    }
+
+    .item:hover {
+        width: 255px;
+    }
+
+    h5 {
+        font-size: 18px;
+    }
+}
+
+/*-------------------------------------------------------- Desktop Styles --------------------------------------------------*/
+
+@media (min-width: 1400px) {
+    .involved_header {
+        height: 600px;
+        padding-top: 400px;
+    }
+}
