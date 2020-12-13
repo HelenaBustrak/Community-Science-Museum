@@ -51,6 +51,10 @@ h3 {
     border: 3px solid var(--purple);
 }
 
+.exhibitions_info {
+    margin-bottom: 40px;
+}
+
 .fa-arrow-circle-right {
     color: var(--purple);
 }
@@ -99,6 +103,6 @@ h3 {
         padding-top: 400px; 
     }
 
-    
+
 
 }

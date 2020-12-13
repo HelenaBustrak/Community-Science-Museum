@@ -69,6 +69,10 @@ h3 {
     border: 1px solid var(--purple);
 }
 
+.purple:hover {
+    border: 3px solid var(--purple);
+}
+
 .purple h3, .purple i {
     color: var(--purple);
 }
@@ -77,12 +81,20 @@ h3 {
     border: 1px solid #E67E00;
 }
 
+.orange:hover {
+    border: 3px solid #E67E00;
+}
+
 .orange h3, .orange i {
     color: #E67E00;
 }
 
 .green {
     border: 1px solid #406D23;
+}
+
+.green:hover {
+    border: 3px solid #406D23;
 }
 
 .green h3, .green i {
