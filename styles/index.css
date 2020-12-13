@@ -104,12 +104,12 @@ li a {
     display: block;
 }
 
-/*-------------------------------------------------------- Main Styles --------------------------------------------------*/
 
 .second_section, ul li, .first_paragraph, .homepage_image h1, .cta, .exhibitions, .for_kids, .for_teachers, .for_researchers, h3, hr {
     margin-left: 7%;
     margin-right: 7%;
 }
+/*-------------------------------------------------------- Main Styles --------------------------------------------------*/
 
 main, ul li, footer {
     font-family: 'Rubik', sans-serif;
@@ -175,7 +175,7 @@ p {
 
 .button {
     display: block;
-    width: 140px;
+    width: 135px;
     padding: 7px 10px;
     text-decoration: none;
     border-radius: 20px;
@@ -183,8 +183,6 @@ p {
     color: white;
     font-size: 18px;
 }
-
-/*-------------------------------------------------------- Second section --------------------------------------------------*/
 
 .exhibitions {
     width: 180px;
@@ -215,15 +213,19 @@ p {
 /*-------------------------------------------------------- Third section --------------------------------------------------*/
 
 .third_section {
+    background-image: url('../images/Space\ blue.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     margin-top: 30px;
     padding: 10px 0 30px 0;
 }
 .third_section h3 {
-    color: var(--dark-blue);
-    margin-bottom: 5px;
+    color: var(--neon-green);
+    text-shadow: 3px 2px 4px rgb(0,0,0);
 }
 
 .for_kids, .for_teachers, .for_researchers {
+    border-radius: 13px;
     margin-bottom: 70px;
 }
 
@@ -232,16 +234,21 @@ p {
     margin-top: 20px;
 }
 
+.p_container {
+    background-color: white;
+    border-radius: 13px;
+}
+
 .third_section p {
     color: var(--dark-blue);
-    padding-bottom: 14px;
+    padding: 14px;
     margin: 0;
     border-radius: 13px;
 }
 
 hr {
-    border: solid 1px var(--purple);
-    margin-bottom: 20px;
+    margin-top: 40px;
+    border: solid 1px var(--neon-green);
 }
 
 /*-------------------------------------------------------- Footer --------------------------------------------------*/
@@ -292,8 +299,6 @@ h6 {
 /*-------------------------------------------------------- Laptop Styles --------------------------------------------------*/
 
 @media (min-width: 1020px) {
-
-    /*-------------------------------------------------------- Header Styles --------------------------------------------------*/
     header {
         height: 150px;
         overflow: hidden;
@@ -368,8 +373,6 @@ h6 {
         margin-left: 5%;
     }
 
-    /*-------------------------------------------------------- Main Styles --------------------------------------------------*/
-
 
     .second_section, .first_paragraph, .homepage_image h1, .cta, .for_kids, .for_teachers, .for_researchers, h3, hr {
         margin-left: 13%;
@@ -406,8 +409,6 @@ h6 {
         margin-right: 40px;
     }
 
-    /*-------------------------------------------------------- Second section --------------------------------------------------*/
-
     .second_section {
         display: flex;
         flex-direction: row;
@@ -442,8 +443,6 @@ h6 {
         width: 400px;
     }
 
-    /*-------------------------------------------------------- Third section --------------------------------------------------*/
-
     .third_section {
         text-align: center;
     }
@@ -454,7 +453,7 @@ h6 {
     }
 
     .p_container p {
-        margin: 5px 30px 0 0;
+        margin: 5px;
         text-align: center;
     }
 
@@ -463,7 +462,6 @@ h6 {
         max-width: 700px;
         max-height: 400px;
     }
-    /*-------------------------------------------------------- Footer --------------------------------------------------*/
 
     .footer_info {
         display: flex;
@@ -517,7 +515,7 @@ h6 {
     }
 
     .cta {
-        width: 230px;
+        width: 220px;
     }
 
     .exhibitions {

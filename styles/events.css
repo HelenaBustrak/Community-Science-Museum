@@ -28,7 +28,7 @@ h5 {
 }
 
 .two hr {
-    border: 1px solid #9F5F10;
+    border: 1px solid #E67E00;
 }
 
 .three hr {
@@ -78,15 +78,15 @@ h3 {
 }
 
 .orange {
-    border: 1px solid #9F5F10;
+    border: 1px solid #E67E00;
 }
 
 .orange:hover {
-    border: 3px solid #9F5F10;
+    border: 3px solid #E67E00;
 }
 
 .orange h3, .orange i {
-    color: #9F5F10;
+    color: #E67E00;
 }
 
 .green {
