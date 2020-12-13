@@ -1,0 +1,109 @@
+
+h1, section {
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.exhibition_header {
+    background-image: url('../images/exhibition-1863344_1920.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    padding-top: 140px;
+}
+
+span {
+    font-size: 50px;                     
+}
+ 
+.exhibition_img {
+    height: 100%;   
+    width: 100%;
+    margin-top: 18px;
+    border-radius: 13px;
+}
+
+hr {
+    margin: 10px 0;
+    border: solid 1px var(--purple);
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+h3 {
+    display: inline;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: var(--purple);
+}
+
+.button_exhibitions {
+    border: 1px solid var(--purple);
+    width: 200px;
+    font-size: 18px;
+    margin-top: 40px;
+    padding: 7px 10px;
+    border-radius: 20px;
+}
+
+.button_exhibitions:hover {
+    border: 3px solid var(--purple);
+}
+
+.exhibitions_info {
+    margin-bottom: 40px;
+}
+
+.fa-arrow-circle-right {
+    color: var(--purple);
+}
+
+
+/*-------------------------------------------------------- Laptop Styles --------------------------------------------------*/
+
+@media (min-width: 1020px) {
+
+    h1, section {
+        margin-left: 13%;
+        margin-right: 13%;
+    }
+
+    .exhibition_header {
+        height: 400px;
+        padding-top: 270px; 
+    }
+
+    .exhibitions_info {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .exhibition_img {
+        width: 50%;
+        height: 50%;
+        order: 2;
+    }
+
+    .exp_container {
+        height: max-content;
+        margin-right: 40px;
+    }
+
+    .button_exhibitions {
+        width: 220px;
+    }
+
+}
+/*-------------------------------------------------------- Desktop Styles --------------------------------------------------*/
+
+@media (min-width: 1400px) {
+    .exhibition_header {
+        height: 600px;
+        padding-top: 400px; 
+    }
+
+
+
+}

@@ -1,0 +1,90 @@
+.visit_header {
+    background-image: url('../images/visit-us.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 250px;
+    padding-top: 200px;
+}
+
+hr {
+    margin:0;
+    border:1px solid var(--purple);
+}
+
+iframe {
+    width: 100%;
+    height: 450px;
+    margin-top: 22px;
+    border: none;
+}
+
+h1, section {
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.visit {
+    margin-bottom: 70px;
+}
+
+
+h2 {
+    margin-bottom: 4px;
+}
+
+h5 {
+    font-size: 15px;
+}
+
+.fa-phone-alt, .fa-envelope {
+    margin-right: 10px;
+    color: var(--purple);
+}
+
+.fasfooter {
+    color: white;
+}
+
+.days {
+    color: var(--purple);
+    font-weight: 500;
+}
+
+
+
+@media (min-width: 1020px) {
+    h1, section {
+        margin-left: 13%;
+        margin-right: 13%;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    h5 {
+        font-size: 18px;
+    }
+
+    .visit_header {
+       height: 400px; 
+       padding-top: 320px;
+    }
+
+    p {
+        width: 80%;
+    }
+
+}
+
+@media (min-width: 1400px) {
+    .visit_header {
+        height: 600px;
+        padding-top: 500px; 
+    }
+
+    h1 {
+        font-size: 80px;
+    }
+}

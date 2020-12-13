@@ -1,0 +1,152 @@
+.events_header {
+    background-image: url('../images/special-events.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 150px;
+    
+}
+
+section, h1 {
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+h2 {
+    font-size: 23px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+h5 {
+    margin-top: 4px;
+}
+
+.one hr {
+    border: 1px solid var(--purple);
+}
+
+.two hr {
+    border: 1px solid #9F5F10;
+}
+
+.three hr {
+    border: 1px solid #406D23;
+}
+
+hr {
+    margin: 0;
+}
+
+.events_img {
+    width: 100%;
+    min-height: 180px;
+    border-radius: 13px;
+    margin-top: 70px;
+    
+}
+
+.desktop {
+    display: none;
+}
+
+.button_events {
+    width: 190px;
+    font-size: 18px;
+    padding: 7px 10px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+
+h3 {
+    display: inline;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.purple {
+    border: 1px solid var(--purple);
+}
+
+.purple:hover {
+    border: 3px solid var(--purple);
+}
+
+.purple h3, .purple i {
+    color: var(--purple);
+}
+
+.orange {
+    border: 1px solid #9F5F10;
+}
+
+.orange:hover {
+    border: 3px solid #9F5F10;
+}
+
+.orange h3, .orange i {
+    color: #9F5F10;
+}
+
+.green {
+    border: 1px solid #406D23;
+}
+
+.green:hover {
+    border: 3px solid #406D23;
+}
+
+.green h3, .green i {
+    color: #406D23;
+}
+
+/*-------------------------------------------------------- Laptop Styles --------------------------------------------------*/
+
+@media (min-width: 1020px) {
+    
+    h1, section {
+        margin-left: 13%;
+        margin-right: 13%;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    p {
+        max-width: 80%;
+    }
+
+    .events_header {
+        height: 400px;
+        padding-top: 270px; 
+    }
+
+    .events_img {
+        margin-top: 70px;
+    }
+
+    .one img {
+        margin-top: 40px;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    .button_events {
+        width: 220px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .events_header {
+        height: 600px;
+        padding-top: 400px; 
+    }
+}
