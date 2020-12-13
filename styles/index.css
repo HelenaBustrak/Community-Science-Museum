@@ -146,6 +146,7 @@ h3 {
     font-weight: 500;
 }
 
+
 p {
     font-size: 18px;
 }
@@ -220,6 +221,7 @@ p {
 }
 .third_section h3 {
     color: var(--neon-green);
+    text-shadow: 3px 2px 4px rgb(0,0,0);
 }
 
 .for_kids, .for_teachers, .for_researchers {
@@ -251,7 +253,9 @@ footer {
     color: white;
     text-align: center;
     font-size: 20px;
+    padding-bottom: 7px;
 }
+
 
 .phone, .adress, .mail {
     display: flex;
@@ -272,6 +276,11 @@ footer {
     margin: 10px;
     color: var(--neon-green);
 }
+
+h6 {
+    font-weight: 400;
+}
+
 
 
 
@@ -428,33 +437,10 @@ footer {
         width: 400px;
     }
 
-    .for_kids, .for_teachers, .for_researchers {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .teachers {
-        order: 1;
-    }
-
-    .p_container {
-        margin-right: 10px;
-        height: max-content;
-    }
-
-    .p_container p {
-        margin:0;
-    }
-
-
-    .third_section_img {
-        width: 50%;
-    }
-
     .footer_info {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-evenly;
         padding: 30px 0;
     }
 
@@ -463,6 +449,8 @@ footer {
         flex-direction: row;
         justify-content: center;
     }
+
+    
 
 
 
@@ -515,13 +503,28 @@ footer {
         margin-right: 40px;
     }
 
+    .for_kids, .for_teachers, .for_researchers {
+        display: flex;
+        flex-direction: row;
+    }
+
     .third_section_img {
-        width: 50%;
+        width: 40%;
+    }
+
+    .teachers {
+        order: 1;
     }
 
     .p_container {
         margin-right: 20px;
+        height: max-content;
     }
+
+    .p_container p {
+        margin:0;
+    }
+
 
 
 }

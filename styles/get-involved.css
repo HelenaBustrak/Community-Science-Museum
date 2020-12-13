@@ -53,6 +53,10 @@ h5 {
     margin-right: 10px;
     color: var(--purple);
 }
+
+.fasfooter {
+    color: white;
+}
 hr {
     margin:0;
     border:1px solid var(--purple);
@@ -61,6 +65,7 @@ hr {
 h2 {
     margin-bottom: 4px;
 }
+
 
 /*-------------------------------------------------------- Laptop Styles --------------------------------------------------*/
 
@@ -99,5 +104,9 @@ h2 {
     .involved_header {
         height: 600px;
         padding-top: 400px;
+    }
+
+    p {
+        width: 80%;
     }
 }
