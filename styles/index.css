@@ -166,6 +166,7 @@ p {
     color: var(--dark-blue);
     text-shadow: 3px 2px 6px rgb(0,0,0,0.3);
     background-color: white;
+
 }
 
 .second_section_img, .third_section_img {
@@ -175,7 +176,7 @@ p {
 
 .button {
     display: block;
-    width: 135px;
+    width: 145px;
     padding: 7px 10px;
     text-decoration: none;
     border-radius: 20px;
@@ -184,23 +185,33 @@ p {
     font-size: 18px;
 }
 
+.cta {
+    border: 3px solid var(--purple);
+}
+
+.cta .fa-arrow-circle-right {
+    float: right;
+}
+
 .exhibitions {
     width: 180px;
     margin-top: 10px;
-    border: 2px solid var(--purple);
+    border: 3px solid var(--purple);
     background-color: white;
     color: var(--purple);
 }
 
 .cta:hover {
     background-color: white;
-    border: 2px solid var(--purple);
+    border: 3px solid var(--purple);
     color: var(--purple);
+    transition: 0.2s;
 }
 
 .exhibitions:hover {
-    background-color: white;
-    border: 4px solid var(--purple);
+    background-color: var(--purple);
+    color: white;
+    transition: 0.2s;
 }
 
 .text_button {
@@ -336,6 +347,7 @@ h6 {
 
     li a:hover {
         color: white;
+        transition: 0.3s;
     }
 
     .active {
@@ -370,7 +382,7 @@ h6 {
     .logo {
         float: left;
         height: 150px;
-        margin-left: 5%;
+        margin-left: 13%;
     }
 
 
@@ -466,8 +478,14 @@ h6 {
     .footer_info {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: center;
         padding: 30px 0;
+    }
+
+    .phone, .adress, .mail {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
 
     .footer_socialm {
@@ -504,6 +522,7 @@ h6 {
 
     .first_paragraph {
         font-size: 1.5em;
+        padding: 15px;
     }
 
     p {
@@ -512,14 +531,22 @@ h6 {
 
     .button {
         font-size: 30px;
+        padding: 12px;
     }
 
     .cta {
-        width: 220px;
+        width: 240px;
+        border-radius: 30px;
     }
 
+    .cta .fa-arrow-circle-right {
+        padding: 2px 15px 0 0;
+    }
+
+
     .exhibitions {
-        width: 500px;
+        width: 400px;
+        border-radius: 30px;
     }
 
     .homepage_image {

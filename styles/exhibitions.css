@@ -40,16 +40,21 @@ h3 {
 }
 
 .button_exhibitions {
-    border: 1px solid var(--purple);
+    border: 3px solid var(--purple);
     width: 200px;
     font-size: 18px;
     margin-top: 40px;
     padding: 7px 10px;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .button_exhibitions:hover {
-    border: 3px solid var(--purple);
+    background-color: var(--purple);
+}
+
+.button_exhibitions:hover h3, .button_exhibitions:hover .fa-arrow-circle-right {
+    color: white;
 }
 
 .exhibitions_info {
@@ -59,6 +64,7 @@ h3 {
 .fa-arrow-circle-right {
     color: var(--purple);
 }
+
 
 
 /*-------------------------------------------------------- Laptop Styles --------------------------------------------------*/
@@ -81,8 +87,7 @@ h3 {
     }
 
     .exhibition_img {
-        width: 50%;
-        height: 50%;
+        min-width: 50%;
         order: 2;
     }
 

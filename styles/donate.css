@@ -1,0 +1,175 @@
+h2, p, hr {
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+p, .donationAmount {
+    margin-bottom: 30px;
+}
+
+p {
+    max-width: 900px;
+}
+
+.field,  .countries {
+    margin: 0;
+    padding: 15px 15px 5px 15px;
+    width: 100%;
+    font-size: 14px;
+    border: none;
+    border-bottom: 2px solid var(--purple);
+}
+
+option {
+    background-color: white;
+}
+
+
+
+
+label {
+    display: block;
+    font-size: 18px;
+    margin-top: 50px;
+    margin-bottom: 3px;
+}
+
+.label-hamburger {
+    margin: 0;
+}
+
+.donationAmountForm {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.donationAmountForm label {
+    margin-top: 10px;
+    font-size: 20px;
+
+}
+
+
+.form-error {
+    display: none;
+    color: red;
+}
+
+.successMessage {
+    display: none;
+    width: 40%;
+    text-align: center;
+    font-size: 20px;
+    margin: 50px auto;
+    padding: 10px;
+    background-color: #27fa1460;
+
+    
+}
+
+.donationAmount {
+    border: 2px solid var(--purple);
+    border-radius: 13px;
+}
+
+h3 {
+    display: block;
+    margin: 0;
+    background-color: #9012ff4b;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 2px solid var(--purple);
+}
+
+.donationAmountForm {
+    padding: 10px 20px 20px 10px;
+}
+
+button {
+    display: block;
+    width: 40%;
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
+    margin: 50px auto 0 auto;
+    padding: 20px;
+    color: white;
+    background-color: #9112ff;
+    border-radius: 13px;
+    border: 2px solid #9112ff;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #9112ff;
+    background-color: white;
+    transition: 0.2s;
+}
+
+
+legend {
+    font-size: 1.5em;
+}
+
+.paymentInfo {
+    margin-top: 100px;
+}
+
+footer {
+    margin-top: 90px;
+}
+
+footer .fas {
+    color: white;
+}
+
+@media (min-width: 600px) {
+    .donationAmountForm {
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    .donationAmount {
+        width: 70%;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .donationAmountForm label {
+        margin-right: 20px;
+    }
+
+}
+
+@media (min-width: 1020px) {
+    h2, p, hr {
+        margin-left: 13%;
+        margin-right: 13%;
+    }
+
+    
+
+    .donationAmount {
+        width: 40%;
+        text-align: center;
+    }
+
+    .donationAmountForm {
+        justify-content: center;
+
+    }
+
+    .field {
+        max-width: 1200px;
+    }
+
+    legend {
+        font-size: 30px;
+    }
+
+    button {
+        font-size: 23px;
+    }
+}
+
